@@ -18,6 +18,6 @@ Install latest TypeScript and compile
 * npm install -g typescript
 * tsc
 
-Open src/html/index.html in a browser.
+Open src/main/html/index.html in a browser.
 
 
