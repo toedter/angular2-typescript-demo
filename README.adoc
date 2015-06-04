@@ -12,3 +12,12 @@ Install runtime dependencies
 
 * npm install -g bower
 * bower install
+
+Install latest TypeScript and compile
+
+* npm install -g typescript
+* tsc
+
+Open src/html/index.html in a browser.
+
+
