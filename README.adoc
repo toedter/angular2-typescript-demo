@@ -1,0 +1,11 @@
+= angular2-typescript-demo
+Playground for the upcoming Angular 2 together with TypeScript
+
+== Getting Started
+Install typings
+* npm install -g tsd
+* tsd query angular2 --action install
+
+Install runtime dependencies
+* npm install -g bower
+* bower install
