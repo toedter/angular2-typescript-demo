@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../../../bower_components/traceur-runtime/traceur-runtime.js"></script>
+    <script src="../../../bower_components/es6-module-loader/dist/es6-module-loader.js"></script>
+    <script src="../../../bower_components/system.js/dist/system.js"></script>
+    <script src="../../../angular2-a22/angular2.dev.js"></script>
+</head>
+<body>
+<my-app></my-app>
+<script>
+    System.config({
+        paths: {
+            '*': '../ts/*.js',
+            'angular2/*': 'angular2/*',        }
+    });
+    System.import('main');
+</script>
+</body>
+</html>
