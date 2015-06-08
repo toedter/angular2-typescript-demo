@@ -4,5 +4,18 @@
   "ref": "master",
   "path": "typings",
   "bundle": "typings/tsd.d.ts",
-  "installed": {}
+  "installed": {
+    "angular2/angular2.d.ts": {
+      "commit": "8c7444882a2bc2ab87387f8f736a7d97e89b9c90"
+    },
+    "rx/rx.d.ts": {
+      "commit": "8c7444882a2bc2ab87387f8f736a7d97e89b9c90"
+    },
+    "es6-promise/es6-promise.d.ts": {
+      "commit": "8c7444882a2bc2ab87387f8f736a7d97e89b9c90"
+    },
+    "rx/rx-lite.d.ts": {
+      "commit": "8c7444882a2bc2ab87387f8f736a7d97e89b9c90"
+    }
+  }
 }
