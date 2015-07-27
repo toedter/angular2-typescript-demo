@@ -3,7 +3,7 @@ export class ServiceComponent {
     private name: string;
 
     constructor() {
-        this.name = 'service name';
+        this.name = 'test service';
     }
 
     public getServiceName(): string {

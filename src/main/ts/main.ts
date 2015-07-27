@@ -6,7 +6,7 @@ import {ServiceComponent} from './services/service';
 
 @Component({
     selector: 'my-app',
-    appInjector: [ServiceComponent]
+    viewInjector: [ServiceComponent]
 })
 @View({
     template: '<h1>Hello {{ name }}</h1><h1>Service: {{ serviceName }}</h1>'
