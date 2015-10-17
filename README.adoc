@@ -1,23 +1,18 @@
 = angular2-typescript-demo
 Playground for the upcoming Angular 2 together with TypeScript
 
+== Preconditions
+
+NodeJS must be installed.
+
 == Getting Started
 
-Install typings
+To run the demo in your default browser:
 
-* npm install -g tsd
-* tsd query angular2 --action install
+* npm install
+* npm run tsc
+* npm start
 
-Install runtime dependencies
-
-* npm install -g bower
-* bower install
-
-Install latest TypeScript and compile
-
-* npm install -g typescript
-* tsc
-
-Open src/main/html/index.html in a browser.
+Then the index.html is served by live-server and your default browser displays the demo.
 
 

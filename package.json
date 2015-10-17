@@ -1,0 +1,20 @@
+ {
+  "name": "angular2-quickstart",
+  "version": "1.0.0",
+  "description": "Angular2 demo",
+  "scripts": {
+     "tsc": "tsc -p src",
+     "start": "live-server --open=src"
+  },
+  "keywords": [],
+  "author": "kai@toedter.com",
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "2.0.0-alpha.44",
+    "systemjs": "0.19.4"
+  },
+  "devDependencies": {
+    "live-server": "^0.8.1",
+    "typescript": "^1.6.2"
+  }
+}
