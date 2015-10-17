@@ -2,7 +2,7 @@ import {View, Component, NgFor, bootstrap} from 'angular2/angular2';
 import {MovieService} from '../services/MovieService';
 
 @Component({
-    selector: 'my-app',
+    selector: 'movie-app',
     viewBindings: [MovieService]
 })
 @View({
