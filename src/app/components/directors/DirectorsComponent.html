@@ -10,7 +10,7 @@
         <tbody>
         <tr *ng-for="#director of directors">
             <td style="text-align: left; width:30%">{{director.name}}</td>
-            <td style="text-align: left; width:75%">{{director.movies}}</td>
+            <td style="text-align: left; width:75%"><div *ng-for="#movie of director.movies">{{movie}}</br></div></td>
         </tr>
         </tbody>
     </table>
