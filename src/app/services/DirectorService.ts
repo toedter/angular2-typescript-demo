@@ -7,17 +7,15 @@ export class DirectorService {
     private directors:any[];
 
     constructor(movieService:MovieService) {
-        var movies:any[] = movieService.getMovies();
-        this.directors = [];
-
         var directorMap:{ [key:string]:string[]; } = {};
-        for (var movie of movies) {
+        for (var movie of movieService.getMovies()) {
             if (typeof directorMap[movie.Director] === "undefined") {
                 directorMap[movie.Director] = [];
             }
             directorMap[movie.Director].push(movie.Title);
         }
 
+        this.directors = [];
         for (var director in directorMap) {
             if (directorMap.hasOwnProperty(director)) {
                 this.directors.push({"name": director, "movies": directorMap[director]});
