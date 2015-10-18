@@ -1,22 +1,18 @@
 import {View, Component, NgFor, bootstrap} from 'angular2/angular2';
-import {MovieService} from '../services/MovieService';
+import {MovieService} from '../../services/MovieService';
 
 @Component({
-    selector: 'movie-app',
+    selector: 'movies',
     viewBindings: [MovieService]
 })
 @View({
-    templateUrl: 'app/components/AppComponent.html',
+    templateUrl: 'app/components/movies/MoviesComponent.html',
     directives: [NgFor]
 })
-export class AppComponent {
-    private name:string;
+export class MoviesComponent {
     private movies:any[];
 
     constructor(private movieService:MovieService) {
-        this.name = 'Movie App';
         this.movies = movieService.getMovies();
     }
 }
-
-bootstrap(AppComponent);
