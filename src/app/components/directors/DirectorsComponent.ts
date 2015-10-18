@@ -12,7 +12,7 @@ import {DirectorService} from '../../services/DirectorService';
 export class DirectorsComponent {
     private directors:any[];
 
-    constructor(private movieService:DirectorService) {
-        this.directors = movieService.getDirector();
+    constructor(private directorService:DirectorService) {
+        this.directors = directorService.getDirectors();
     }
 }
