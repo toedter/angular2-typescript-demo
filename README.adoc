@@ -15,4 +15,12 @@ To run the demo in your default browser:
 
 Then the index.html is served by live-server and your default browser displays the demo.
 
+== Screenshots
+
+image:movies.png[Movies]
+
+image:directors.png[Directors]
+
+
+
 
