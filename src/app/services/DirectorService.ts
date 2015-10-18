@@ -1,14 +1,17 @@
+import {Injectable} from 'angular2/core';
+import {MovieService} from './MovieService';
+
+@Injectable()
 export class DirectorService {
 
     private directors: any[];
 
-    constructor() {
-        this.directors = [
-            { "name":"Frank Darabont", "born":"1959" },
-            { "name":"Francis Ford Coppola", "born":"1939", },
-            { "name":"Christopher Nolan ", "born":"1970" },
-            { "name":"Sidney Lumet", "born":"1924" }
-        ];
+    constructor(movieService:MovieService) {
+        var movies:any[] = movieService.getMovies();
+        this.directors = [];
+        for (var movie of movies) {
+            this.directors.push({ "name":movie.Director, "movie":movie.Title });
+        }
     }
 
     public getDirector(): any[] {
