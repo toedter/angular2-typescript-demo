@@ -4,6 +4,7 @@
         <thead>
         <tr>
             <th></th>
+            <th></th>
             <th>Title</th>
             <th>Year</th>
             <th>Director</th>
@@ -11,15 +12,16 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ng-for="#movie of movies">
+        <tr *ng-for="#movie of movies; #i = index">
             <td style="text-align: left">
                 <a href="app/components/movies/thumbs/{{movie.imdbID}}.jpg">
                 <img src="app/components/movies/thumbs/{{movie.imdbID}}.jpg" height="30" width="20"/>
                 </a>
             </td>
+            <td style="text-align: right; width:5%">{{i+1}}</td>
             <td style="text-align: left; width:50%">{{movie.Title}}</td>
             <td style="text-align: left; width:10%">{{movie.Year}}</td>
-            <td style="text-align: left; width:40%">{{movie.Director}}</td>
+            <td style="text-align: left; width:25%">{{movie.Director}}</td>
             <td style="text-align: left; width:10%">{{movie.imdbRating}}</td>
         </tr>
         </tbody>
