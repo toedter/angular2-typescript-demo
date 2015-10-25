@@ -2,12 +2,8 @@ import {MoviesComponent} from '../movies/MoviesComponent';
 import {DirectorsComponent} from '../directors/DirectorsComponent';
 
 export var Routes = {
-    home: {
-        path: '/',
-        redirectTo: '/movies'
-    },
     movies: {
-        path: '/movies',
+        path: '/',
         as: 'Movies',
         component: MoviesComponent,
         caption: 'Movies'
@@ -20,4 +16,4 @@ export var Routes = {
     },
 };
 
-export const APP_ROUTES = [this.Routes.home, this.Routes.movies, this.Routes.directors];
+export const APP_ROUTES = [this.Routes.movies, this.Routes.directors];
