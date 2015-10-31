@@ -12,7 +12,9 @@
         <tr *ng-for="#director of directors | sortDirectors">
             <td style="text-align: left; width:30%">{{director.name}}</td>
             <td style="text-align: left; width:5%">{{director.movies.length}}</td>
-            <td style="text-align: left; width:55%"><div *ng-for="#movie of director.movies">{{movie}}</br></div></td>
+            <td style="text-align: left; width:55%">
+                <div *ng-for="#movie of director.movies">{{movie}}</br></div>
+            </td>
         </tr>
         </tbody>
     </table>

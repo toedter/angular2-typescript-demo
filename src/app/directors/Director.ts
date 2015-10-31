@@ -1,4 +1,4 @@
 export interface Director {
-    name: string;
-    movies: string[];
+    name:string;
+    movies:string[];
 }
