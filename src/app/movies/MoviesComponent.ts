@@ -1,10 +1,10 @@
 import {Component, NgFor} from 'angular2/angular2';
-import {MovieService} from '../../services/MovieService';
+import {MovieService} from './MovieService';
 
 @Component({
     selector: 'movies',
     viewBindings: [MovieService],
-    templateUrl: 'app/components/movies/MoviesComponent.html',
+    templateUrl: 'app/movies/MoviesComponent.html',
     directives: [NgFor]
 })
 export class MoviesComponent {

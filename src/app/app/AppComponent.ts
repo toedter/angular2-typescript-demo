@@ -6,7 +6,7 @@ import { Routes, APP_ROUTES } from './RouteConfig';
 
 @Component({
     selector: 'movie-app',
-    templateUrl: 'app/components/app/AppComponent.html',
+    templateUrl: 'app/app/AppComponent.html',
     directives: [CORE_DIRECTIVES, FORM_DIRECTIVES, ROUTER_DIRECTIVES]
 })
 @RouteConfig(APP_ROUTES)

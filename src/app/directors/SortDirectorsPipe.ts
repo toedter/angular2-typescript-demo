@@ -1,5 +1,5 @@
 import {Pipe} from 'angular2/angular2';
-import {Director} from '../components/directors/Director';
+import {Director} from './Director';
 
 @Pipe({ name: 'sortDirectors' })
 export class SortDirectorsPipe {

@@ -16,4 +16,4 @@ export var Routes = {
     },
 };
 
-export const APP_ROUTES = [this.Routes.movies, this.Routes.directors];
+export const APP_ROUTES = Object.keys(Routes).map(r => Routes[r]);

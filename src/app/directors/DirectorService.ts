@@ -1,5 +1,5 @@
 import {Injectable} from 'angular2/core';
-import {MovieService} from './MovieService';
+import {MovieService} from '../movies/MovieService';
 
 @Injectable()
 export class DirectorService {
