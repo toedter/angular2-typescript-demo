@@ -1,5 +1,6 @@
 import {Component, NgFor} from 'angular2/angular2';
 import {MovieService} from './MovieService';
+import {Movie} from './Movie';
 
 @Component({
     selector: 'movies',
@@ -8,7 +9,7 @@ import {MovieService} from './MovieService';
     directives: [NgFor]
 })
 export class MoviesComponent {
-    private movies:any[];
+    private movies:Movie[];
 
     constructor(private movieService:MovieService) {
         this.movies = movieService.getMovies();

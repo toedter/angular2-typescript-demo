@@ -13,9 +13,9 @@ export interface Movie {
     Country:string,
     Awards:string,
     Poster:string,
-    Metascore:number,
-    imdbRating:number,
-    imdbVotes:number,
+    Metascore:string,
+    imdbRating:string,
+    imdbVotes:string,
     imdbID:string,
     Type:string,
     Response:string

@@ -1,6 +1,8 @@
+import {Movie} from "./Movie"
+
 export class MovieService {
 
-    private movies:any[];
+    private movies:Movie[];
 
     constructor() {
         this.movies = [
@@ -5507,7 +5509,7 @@ export class MovieService {
         ];
     }
 
-    public getMovies():any[] {
+    public getMovies():Movie[] {
         return this.movies;
     }
 }
