@@ -9,7 +9,7 @@ import { DirectorsComponent } from '../directors/DirectorsComponent';
     directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-    {path: '/', name: 'Movies', component: MoviesComponent, useAsDefault: true},
+    {path: '/movies', name: 'Movies', component: MoviesComponent, useAsDefault: true},
     {path: '/directors', name: 'Directors', component: DirectorsComponent }
 ])
 export class AppComponent {
