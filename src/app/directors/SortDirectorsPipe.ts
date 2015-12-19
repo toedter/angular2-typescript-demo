@@ -1,4 +1,4 @@
-import {Pipe} from 'angular2/angular2';
+import {Pipe} from 'angular2/core';
 import {Director} from './Director';
 
 @Pipe({name: 'sortDirectors'})

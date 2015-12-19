@@ -12,7 +12,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ng-for="#movie of movies; #i = index">
+        <tr *ngFor="#movie of movies; #i = index">
             <td style="text-align: left">
                 <a href="app/movies/thumbs/{{movie.imdbID}}.jpg">
                     <img src="app/movies/thumbs/{{movie.imdbID}}.jpg" height="30" width="20"/>

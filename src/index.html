@@ -12,13 +12,13 @@
 
     <title>Angular 2 TypeScript Demo</title>
 
+    <script src="../node_modules/angular2/bundles/angular2-polyfills.js"></script>
     <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/rxjs/bundles/Rx.js"></script>
     <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
     <script src="../node_modules/angular2/bundles/router.dev.js"></script>
     <script>
-        System.config({
-            packages: {'app': {defaultExtension: 'js'}}
-        });
+        System.config({packages: {app: {format: 'register', defaultExtension: 'js'}}});
         System.import('app/bootstrap').catch(console.log.bind(console));
     </script>
 </head>

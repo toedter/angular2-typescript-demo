@@ -1,4 +1,4 @@
-import {Component, NgFor} from 'angular2/angular2';
+import {Component} from 'angular2/core';
 import {DirectorService} from './DirectorService';
 import {SortDirectorsPipe} from './SortDirectorsPipe';
 
@@ -6,7 +6,6 @@ import {SortDirectorsPipe} from './SortDirectorsPipe';
     selector: 'directors',
     viewBindings: [DirectorService],
     templateUrl: 'app/directors/DirectorsComponent.html',
-    directives: [NgFor],
     pipes: [SortDirectorsPipe]
 })
 export class DirectorsComponent {
