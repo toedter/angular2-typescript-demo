@@ -2,7 +2,6 @@ import { Component } from 'angular2/core';
 import { ROUTER_DIRECTIVES, RouteConfig } from 'angular2/router';
 import { MoviesComponent } from '../movies/MoviesComponent';
 import { DirectorsComponent } from '../directors/DirectorsComponent';
-import { Routes, APP_ROUTES } from './RouteConfig';
 
 @Component({
     selector: 'movie-app',
@@ -14,5 +13,4 @@ import { Routes, APP_ROUTES } from './RouteConfig';
     {path: '/directors', name: 'Directors', component: DirectorsComponent }
 ])
 export class AppComponent {
-    public routes = Routes;
 }
