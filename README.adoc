@@ -1,4 +1,4 @@
-= angular2-typescript-demo
+= Angular2 TypeScript Demo
 Playground for the upcoming Angular 2 together with TypeScript
 
 == Preconditions
