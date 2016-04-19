@@ -11,9 +11,13 @@
   "license": "MIT",
   "repository": "https://github.com/toedter/angular2-typescript-demo.git",
   "dependencies": {
-    "angular2": "2.0.0-beta.13",
+    "angular2": "2.0.0-beta.15",
     "bootstrap": "3.3.6",
-    "systemjs": "0.19.25"
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.2",
+    "systemjs": "0.19.25",
+    "zone.js": "^0.6.10"
   },
   "devDependencies": {
     "live-server": "^0.8.1",
